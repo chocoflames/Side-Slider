@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background: rgba(0, 0, 0, 0.586);
+}
+.page-head{
+    display: flex;
+    justify-content: center;
+}
+.slider-img{
+    width: 1000px;
+    object-fit: cover;
+    height: 100%;
+}
+.slider{
+    width: 1000px;
+    height:600px;
+    transition: 1s;
+}
+.slide-cont{
+    width: 1000px;
+    position: relative;
+    height: 600px;
+    margin: 70px 50px;
+    display: flex;
+    overflow: hidden;
+}
+.slider-text{
+    position: absolute;
+    top: 45%;
+    right: 35%;
+}
+.slider-text h1{
+    color: azure;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+}
+.left,
+.right{
+    cursor: pointer;
+    font-size: 70px;
+    color: #333333;
+    flex: 1;
+    display: flex;
+    padding: 0 20px;
+}
+.left{
+    justify-content: flex-start;
+}
+.right{
+    justify-content: flex-end;
+}
